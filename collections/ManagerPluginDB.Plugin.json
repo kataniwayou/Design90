@@ -1,0 +1,130 @@
+[{
+  "_id": "b82d0b08-7c5a-40cf-b314-a2915439a9c7",
+  "version": "1.0.1",
+  "name": "FileReaderPlugin",
+  "createdAt": {
+    "$date": "2025-08-19T07:21:21.837Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-19T07:21:21.837Z"
+  },
+  "createdBy": "Anonymous",
+  "updatedBy": "string",
+  "description": "FileReaderPlugin",
+  "payload": "",
+  "schemaId": "00000000-0000-0000-0000-000000000000",
+  "inputSchemaId": "550e8400-e29b-41d4-a716-446655440005",
+  "outputSchemaId": "550e8400-e29b-41d4-a716-446655440005",
+  "enableInputValidation": false,
+  "enableOutputValidation": true,
+  "assemblyBasePath": "C:\\Users\\UserL\\source\\repos\\Design85\\Libraries\\Plugin.FileReader",
+  "assemblyName": "Plugin.FileReader",
+  "assemblyVersion": "1.0.0.0",
+  "typeName": "Plugin.FileReader.FileReaderPlugin",
+  "executionTimeoutMs": 30000,
+  "isStateless": true
+},
+{
+  "_id": "fd44fdf2-411a-49be-997d-a0c3a7c98413",
+  "version": "1.0.1",
+  "name": "FileWriterPlugin",
+  "createdAt": {
+    "$date": "2025-08-19T07:22:43.706Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-19T07:22:43.706Z"
+  },
+  "createdBy": "Anonymous",
+  "updatedBy": "string",
+  "description": "FileWriterPlugin",
+  "payload": "",
+  "schemaId": "00000000-0000-0000-0000-000000000000",
+  "inputSchemaId": "550e8400-e29b-41d4-a716-446655440005",
+  "outputSchemaId": "550e8400-e29b-41d4-a716-446655440005",
+  "enableInputValidation": true,
+  "enableOutputValidation": false,
+  "assemblyBasePath": "C:\\Users\\UserL\\source\\repos\\Design85\\Libraries\\Plugin.FileWriter",
+  "assemblyName": "Plugin.FileWriter",
+  "assemblyVersion": "1.0.0.0",
+  "typeName": "Plugin.FileWriter.FileWriterPlugin",
+  "executionTimeoutMs": 30000,
+  "isStateless": true
+},
+{
+  "_id": "fd44fdf2-411a-49be-997d-a0c3a7c98414",
+  "version": "1.0.1",
+  "name": "StandardizerPlugin",
+  "createdAt": {
+    "$date": "2025-08-19T07:22:43.706Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-19T07:22:43.706Z"
+  },
+  "createdBy": "Anonymous",
+  "updatedBy": "string",
+  "description": "StandardizerPlugin",
+  "payload": "",
+  "schemaId": "00000000-0000-0000-0000-000000000000",
+  "inputSchemaId": "550e8400-e29b-41d4-a716-446655440005",
+  "outputSchemaId": "550e8400-e29b-41d4-a716-446655440005",
+  "enableInputValidation": true,
+  "enableOutputValidation": true,
+  "assemblyBasePath": "C:\\Users\\UserL\\source\\repos\\Design85\\Libraries\\Plugin.Standardizer",
+  "assemblyName": "Plugin.Standardizer",
+  "assemblyVersion": "1.0.0.0",
+  "typeName": "Plugin.Standardizer.StandardizerPlugin",
+  "executionTimeoutMs": 30000,
+  "isStateless": true
+},
+{
+  "_id": "fd44fdf2-411a-49be-997d-a0c3a7c98416",
+  "version": "1.0.1",
+  "name": "EnricherPlugin",
+  "createdAt": {
+    "$date": "2025-08-19T07:22:43.706Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-19T07:22:43.706Z"
+  },
+  "createdBy": "Anonymous",
+  "updatedBy": "string",
+  "description": "EnricherPlugin",
+  "payload": "",
+  "schemaId": "00000000-0000-0000-0000-000000000000",
+  "inputSchemaId": "550e8400-e29b-41d4-a716-446655440005",
+  "outputSchemaId": "550e8400-e29b-41d4-a716-446655440005",
+  "enableInputValidation": true,
+  "enableOutputValidation": true,
+  "assemblyBasePath": "C:\\Users\\UserL\\source\\repos\\Design85\\Libraries\\Plugin.Enricher",
+  "assemblyName": "Plugin.Enricher",
+  "assemblyVersion": "1.0.0.0",
+  "typeName": "Plugin.Enricher.EnricherPlugin",
+  "executionTimeoutMs": 30000,
+  "isStateless": true
+},
+{
+  "_id": "fd44fdf2-411a-49be-997d-a0c3a7c98417",
+  "version": "1.0.1",
+  "name": "AudioConverterPlugin",
+  "createdAt": {
+    "$date": "2025-08-19T07:22:43.706Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-19T07:22:43.706Z"
+  },
+  "createdBy": "Anonymous",
+  "updatedBy": "string",
+  "description": "AudioConverterPlugin",
+  "payload": "",
+  "schemaId": "00000000-0000-0000-0000-000000000000",
+  "inputSchemaId": "550e8400-e29b-41d4-a716-446655440005",
+  "outputSchemaId": "550e8400-e29b-41d4-a716-446655440005",
+  "enableInputValidation": true,
+  "enableOutputValidation": true,
+  "assemblyBasePath": "C:\\Users\\UserL\\source\\repos\\Design85\\Libraries\\Plugin.AudioConverter",
+  "assemblyName": "Plugin.AudioConverter",
+  "assemblyVersion": "1.0.0.0",
+  "typeName": "Plugin.AudioConverter.AudioConverterPlugin",
+  "executionTimeoutMs": 30000,
+  "isStateless": true
+}]

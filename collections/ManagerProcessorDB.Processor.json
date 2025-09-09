@@ -1,0 +1,17 @@
+[{
+  "_id": "179de9ae-a83d-40ba-a6b1-acd77987de3c",
+  "version": "1.0.0",
+  "name": "PluginLoaderProcessor",
+  "createdAt": {
+    "$date": "2025-08-31T10:42:59.168Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-31T10:42:59.168Z"
+  },
+  "createdBy": "BaseProcessorApplication",
+  "updatedBy": "",
+  "description": "Dynamic plugin execution processor that loads and executes external plugin assemblies with fresh instances for better isolation and predictability",
+  "inputSchemaId": "d2da7244-8add-433b-a7b9-1812859d6c01",
+  "outputSchemaId": "d2da7244-8add-433b-a7b9-1812859d6c01",
+  "implementationHash": "9da204a31b362e28d4d01108bb84d6d0b87578ff9347736b8588ce6683320244"
+}]

@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: design90-plugin-manager
+  namespace: design90-infrastructure
+  labels:
+    app: design90-plugin-manager
+    component: manager
+    project: design90
+    manager-type: plugin
+    service-type: internal
+    port-forward: "enabled"
+  annotations:
+    port-forward.design90.io/ports: "5190"
+    port-forward.design90.io/description: "Plugin Manager API access"
+    service.alpha.kubernetes.io/tolerate-unready-endpoints: "true"
+spec:
+  type: ClusterIP
+  ports:
+  - port: 5190
+    targetPort: 5190
+    protocol: TCP
+    name: http
+  selector:
+    app: design90-plugin-manager
+  sessionAffinity: None
+  
+---
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: design90-plugin-manager
+  namespace: design90-infrastructure
+  labels:
+    app: design90-plugin-manager
+    component: manager
+    project: design90
+# Endpoints will be automatically populated by Kubernetes based on pod readiness

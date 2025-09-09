@@ -1,0 +1,93 @@
+[{
+  "_id": "783b5efe-955c-4474-9bf6-4e73032e8903",
+  "version": "1.1.1",
+  "name": "StepFileReader",
+  "createdAt": {
+    "$date": "2025-07-27T06:35:40.724Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-27T06:35:40.724Z"
+  },
+  "createdBy": "Anonymous",
+  "updatedBy": "string",
+  "description": "Step test for FileReaderProcessor",
+  "processorId": "179de9ae-a83d-40ba-a6b1-acd77987de3c",
+  "nextStepIds": [
+    "38d2b4f9-68ed-48d5-bbc5-74b165735585"
+  ],
+  "entryCondition": "PreviousCompleted"
+},
+{
+  "_id": "38d2b4f9-68ed-48d5-bbc5-74b165735584",
+  "version": "1.1.1",
+  "name": "StepFileWriter",
+  "createdAt": {
+    "$date": "2025-08-03T12:43:10.184Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-03T12:43:10.184Z"
+  },
+  "createdBy": "Anonymous",
+  "updatedBy": "string",
+  "description": "Step test for FileWriterProcessor",
+  "processorId": "179de9ae-a83d-40ba-a6b1-acd77987de3c",
+  "nextStepIds": [],
+  "entryCondition": "PreviousCompleted"
+},
+{
+  "_id": "38d2b4f9-68ed-48d5-bbc5-74b165735585",
+  "version": "1.0.0",
+  "name": "StandardizerPluginLoader",
+  "createdAt": {
+    "$date": "2025-08-03T12:43:10.184Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-03T12:43:10.184Z"
+  },
+  "createdBy": "Anonymous",
+  "updatedBy": "string",
+  "description": "Step test for PluginLoaderProcessor",
+  "processorId": "179de9ae-a83d-40ba-a6b1-acd77987de3c",
+  "nextStepIds": [
+    "38d2b4f9-68ed-48d5-bbc5-74b165735586"
+  ],
+  "entryCondition": "PreviousCompleted"
+},
+{
+  "_id": "38d2b4f9-68ed-48d5-bbc5-74b165735586",
+  "version": "1.0.0",
+  "name": "EnricherPluginLoader",
+  "createdAt": {
+    "$date": "2025-08-03T12:43:10.184Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-03T12:43:10.184Z"
+  },
+  "createdBy": "Anonymous",
+  "updatedBy": "string",
+  "description": "Step test for PluginLoaderProcessor",
+  "processorId": "179de9ae-a83d-40ba-a6b1-acd77987de3c",
+  "nextStepIds": [
+    "38d2b4f9-68ed-48d5-bbc5-74b165735587"
+  ],
+  "entryCondition": "PreviousCompleted"
+},
+{
+  "_id": "38d2b4f9-68ed-48d5-bbc5-74b165735587",
+  "version": "1.0.0",
+  "name": "AudioConverterPluginLoader",
+  "createdAt": {
+    "$date": "2025-08-03T12:43:10.184Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-03T12:43:10.184Z"
+  },
+  "createdBy": "Anonymous",
+  "updatedBy": "string",
+  "description": "Step test for AudioConverter",
+  "processorId": "179de9ae-a83d-40ba-a6b1-acd77987de3c",
+  "nextStepIds": [
+    "38d2b4f9-68ed-48d5-bbc5-74b165735584"
+  ],
+  "entryCondition": "PreviousCompleted"
+}]

@@ -1,0 +1,84 @@
+kubectl apply -f k8s/01-namespace/namespace.yaml
+kubectl apply -f k8s/02-storage/persistent-volumes.yaml
+kubectl apply -f k8s/03-configmaps/infrastructure-config.yaml
+kubectl apply -f k8s/04-database/mongodb.yaml
+kubectl apply -f k8s/05-messaging/zookeeper.yaml
+kubectl apply -f k8s/05-messaging/kafka.yaml
+kubectl apply -f k8s/05-messaging/rabbitmq.yaml
+kubectl apply -f k8s/05-messaging/kafka-ui.yaml
+kubectl apply -f k8s/06-cache/hazelcast-config.yaml
+kubectl apply -f k8s/06-cache/hazelcast.yaml
+kubectl apply -f k8s/07-managers/address-manager/configmap.yaml
+kubectl apply -f k8s/07-managers/address-manager/deployment.yaml
+kubectl apply -f k8s/07-managers/address-manager/service-internal.yaml
+kubectl apply -f k8s/07-managers/address-manager/hpa.yaml
+kubectl apply -f k8s/07-managers/address-manager/networkpolicy.yaml
+kubectl apply -f k8s/07-managers/assignment-manager/configmap.yaml
+kubectl apply -f k8s/07-managers/assignment-manager/deployment.yaml
+kubectl apply -f k8s/07-managers/assignment-manager/service-internal.yaml
+kubectl apply -f k8s/07-managers/assignment-manager/hpa.yaml
+kubectl apply -f k8s/07-managers/assignment-manager/networkpolicy.yaml
+kubectl apply -f k8s/07-managers/delivery-manager/configmap.yaml
+kubectl apply -f k8s/07-managers/delivery-manager/deployment.yaml
+kubectl apply -f k8s/07-managers/delivery-manager/service-internal.yaml
+kubectl apply -f k8s/07-managers/delivery-manager/hpa.yaml
+kubectl apply -f k8s/07-managers/delivery-manager/networkpolicy.yaml
+kubectl apply -f k8s/07-managers/orchestratedflow-manager/configmap.yaml
+kubectl apply -f k8s/07-managers/orchestratedflow-manager/deployment.yaml
+kubectl apply -f k8s/07-managers/orchestratedflow-manager/service-internal.yaml
+kubectl apply -f k8s/07-managers/orchestratedflow-manager/hpa.yaml
+kubectl apply -f k8s/07-managers/orchestratedflow-manager/networkpolicy.yaml
+kubectl apply -f k8s/07-managers/orchestrator-manager/configmap.yaml
+kubectl apply -f k8s/07-managers/orchestrator-manager/deployment.yaml
+kubectl apply -f k8s/07-managers/orchestrator-manager/service-internal.yaml
+kubectl apply -f k8s/07-managers/orchestrator-manager/hpa.yaml
+kubectl apply -f k8s/07-managers/orchestrator-manager/networkpolicy.yaml
+kubectl apply -f k8s/07-managers/plugin-manager/configmap.yaml
+kubectl apply -f k8s/07-managers/plugin-manager/deployment.yaml
+kubectl apply -f k8s/07-managers/plugin-manager/service-internal.yaml
+kubectl apply -f k8s/07-managers/plugin-manager/hpa.yaml
+kubectl apply -f k8s/07-managers/plugin-manager/networkpolicy.yaml
+kubectl apply -f k8s/07-managers/processor-manager/configmap.yaml
+kubectl apply -f k8s/07-managers/processor-manager/deployment.yaml
+kubectl apply -f k8s/07-managers/processor-manager/service-internal.yaml
+kubectl apply -f k8s/07-managers/processor-manager/hpa.yaml
+kubectl apply -f k8s/07-managers/processor-manager/networkpolicy.yaml
+kubectl apply -f k8s/07-managers/schema-manager/configmap.yaml
+kubectl apply -f k8s/07-managers/schema-manager/deployment.yaml
+kubectl apply -f k8s/07-managers/schema-manager/service-internal.yaml
+kubectl apply -f k8s/07-managers/schema-manager/hpa.yaml
+kubectl apply -f k8s/07-managers/schema-manager/networkpolicy.yaml
+kubectl apply -f k8s/07-managers/step-manager/configmap.yaml
+kubectl apply -f k8s/07-managers/step-manager/deployment.yaml
+kubectl apply -f k8s/07-managers/step-manager/service-internal.yaml
+kubectl apply -f k8s/07-managers/step-manager/hpa.yaml
+kubectl apply -f k8s/07-managers/step-manager/networkpolicy.yaml
+kubectl apply -f k8s/07-managers/workflow-manager/configmap.yaml
+kubectl apply -f k8s/07-managers/workflow-manager/deployment.yaml
+kubectl apply -f k8s/07-managers/workflow-manager/service-internal.yaml
+kubectl apply -f k8s/07-managers/workflow-manager/hpa.yaml
+kubectl apply -f k8s/07-managers/workflow-manager/networkpolicy.yaml
+kubectl apply -f k8s/08-processors/pluginloader-processor/configmap.yaml
+kubectl apply -f k8s/08-processors/pluginloader-processor/deployment.yaml
+kubectl apply -f k8s/08-processors/pluginloader-processor/hpa.yaml
+kubectl apply -f k8s/08-processors/pluginloader-processor/networkpolicy.yaml
+kubectl apply -f k8s/09-observability/prometheus-config.yaml
+kubectl apply -f k8s/09-observability/prometheus.yaml
+kubectl apply -f k8s/09-observability/elasticsearch.yaml
+kubectl apply -f k8s/09-observability/kibana.yaml
+kubectl apply -f k8s/09-observability/otel-collector-config.yaml
+kubectl apply -f k8s/09-observability/otel-collector.yaml
+kubectl apply -f k8s/09-observability/grafana.yaml
+
+
+
+docker build -f Managers/Manager.Address/Dockerfile -t design90/address-manager:latest .
+docker build -f Managers/Manager.Assignment/Dockerfile -t design90/assignment-manager:latest .
+docker build -f Managers/Manager.Delivery/Dockerfile -t design90/delivery-manager:latest .
+docker build -f Managers/Manager.OrchestratedFlow/Dockerfile -t design90/orchestratedflow-manager:latest .
+docker build -f Managers/Manager.Orchestrator/Dockerfile -t design90/orchestrator-manager:latest .
+docker build -f Managers/Manager.Plugin/Dockerfile -t design90/plugin-manager:latest .
+docker build -f Managers/Manager.Processor/Dockerfile -t design90/processor-manager:latest .
+docker build -f Managers/Manager.Schema/Dockerfile -t design90/schema-manager:latest .
+docker build -f Managers/Manager.Step/Dockerfile -t design90/step-manager:latest .
+docker build -f Managers/Manager.Workflow/Dockerfile -t design90/workflow-manager:latest .

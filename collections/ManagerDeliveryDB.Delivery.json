@@ -1,0 +1,48 @@
+[{
+  "_id": "d5a42ff2-eb56-496e-b5f1-b846147d2f50",
+  "version": "1.0.0",
+  "name": "StandardizerPluginConfiguration",
+  "createdAt": {
+    "$date": "2025-08-13T13:49:37.723Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-13T13:49:37.723Z"
+  },
+  "createdBy": "Anonymous",
+  "updatedBy": "string",
+  "description": "string",
+  "payload": "{\"metadataImplementationType\":\"Plugin.Standardizer.Examples.ExampleXmlMetadataStandardizer\"}",
+  "schemaId": "550e8400-e29b-41d4-a716-446655440014"
+},
+{
+  "_id": "d5a42ff2-eb56-496e-b5f1-b846147d2f51",
+  "version": "1.0.0",
+  "name": "EnricherPluginConfiguration",
+  "createdAt": {
+    "$date": "2025-08-13T13:49:37.723Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-13T13:49:37.723Z"
+  },
+  "createdBy": "Anonymous",
+  "updatedBy": "string",
+  "description": "string",
+  "payload": "{\"metadataImplementationType\":\"Plugin.Enricher.Examples.ExampleXmlMetadataEnricher\"}",
+  "schemaId": "550e8400-e29b-41d4-a716-446655440014"
+},
+{
+  "_id": "d5a42ff2-eb56-496e-b5f1-b846147d2f52",
+  "version": "1.0.0",
+  "name": "AudioConverterPluginConfiguration",
+  "createdAt": {
+    "$date": "2025-08-13T13:49:37.723Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-13T13:49:37.723Z"
+  },
+  "createdBy": "Anonymous",
+  "updatedBy": "string",
+  "description": "string",
+  "payload": "{\"conversionArguments\":\"-acodec libmp3lame -ab 320k -ar 44100 -ac 2\",\"ffmpegPath\":\"C:\\\\ProgramData\\\\chocolatey\\\\bin\\\\ffmpeg.exe\",\"metadataImplementationType\":\"Plugin.AudioConverter.Examples.ExampleAudioConverter\"}",
+  "schemaId": "550e8400-e29b-41d4-a716-446655440015"
+}]
