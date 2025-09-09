@@ -82,3 +82,37 @@ docker build -f Managers/Manager.Processor/Dockerfile -t design90/processor-mana
 docker build -f Managers/Manager.Schema/Dockerfile -t design90/schema-manager:latest .
 docker build -f Managers/Manager.Step/Dockerfile -t design90/step-manager:latest .
 docker build -f Managers/Manager.Workflow/Dockerfile -t design90/workflow-manager:latest .
+
+kubectl port-forward -n design90-infrastructure service/design90-orchestrator-manager 5100:5100
+kubectl port-forward -n design90-infrastructure service/design90-processor-manager 5110:5110
+kubectl port-forward -n design90-infrastructure service/design90-address-manager 5120:5120
+kubectl port-forward -n design90-infrastructure service/design90-assignment-manager 5130:5130
+kubectl port-forward -n design90-infrastructure service/design90-orchestratedflow-manager 5140:5140
+kubectl port-forward -n design90-infrastructure service/design90-delivery-manager 5150:5150
+kubectl port-forward -n design90-infrastructure service/design90-schema-manager 5160:5160
+kubectl port-forward -n design90-infrastructure service/design90-step-manager 5170:5170
+kubectl port-forward -n design90-infrastructure service/design90-workflow-manager 5180:5180
+kubectl port-forward -n design90-infrastructure service/design90-plugin-manager 5190:5190
+
+
+kubectl port-forward -n design90-infrastructure service/design90-elasticsearch 9200:9200
+kubectl port-forward -n design90-infrastructure service/design90-elasticsearch 9300:9300
+kubectl port-forward -n design90-infrastructure service/design90-kibana 5601:5601
+kubectl port-forward -n design90-infrastructure service/design90-prometheus 9090:9090
+kubectl port-forward -n design90-infrastructure service/design90-grafana 3000:3000
+kubectl port-forward -n design90-infrastructure service/design90-otel-collector 4317:4317
+kubectl port-forward -n design90-infrastructure service/design90-otel-collector 4318:4318
+kubectl port-forward -n design90-infrastructure service/design90-otel-collector 8888:8888
+kubectl port-forward -n design90-infrastructure service/design90-otel-collector 8081:8081
+kubectl port-forward -n design90-infrastructure service/design90-otel-collector 8889:8889
+
+kubectl port-forward -n design90-infrastructure service/design90-hazelcast 5701:5701
+kubectl port-forward -n design90-infrastructure service/design90-hazelcast 8080:8080
+
+kubectl port-forward -n design90-infrastructure service/design90-zookeeper 2181:2181
+kubectl port-forward -n design90-infrastructure service/design90-kafka 9092:9092
+kubectl port-forward -n design90-infrastructure service/design90-rabbitmq 5672:5672
+kubectl port-forward -n design90-infrastructure service/design90-rabbitmq 15672:15672
+kubectl port-forward -n design90-infrastructure service/design90-kafka-ui 8080:8080
+
+kubectl port-forward -n design90-infrastructure service/design90-mongodb 27017:27017
